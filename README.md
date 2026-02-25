@@ -157,38 +157,5 @@ messages:
   # ... и другие
 ```
 
-## 🔨 Разработка
-
-### Сборка
-
-```bash
-mvn clean package
-```
-
-### Требования
-
-- Java 17+
-- Maven 3.6+
-- Paper/Spigot 1.21.11
-
-## 📄 Лицензия
-
-Этот проект распространяется под лицензией MIT.
-
-## 👤 Автор
-
-- **haker_one**
-
-## 🐛 Баги и предложения
-
-Если вы нашли баг или у вас есть предложение, создайте issue на GitHub.
-
-## 📊 Статистика
-
-![Version](https://img.shields.io/badge/version-1.0.0-blue)
-![Minecraft](https://img.shields.io/badge/minecraft-1.21.11-green)
-![Java](https://img.shields.io/badge/java-17+-orange)
-
----
-
 **Приятной игры!** 🎮
+- **by haker_one**
