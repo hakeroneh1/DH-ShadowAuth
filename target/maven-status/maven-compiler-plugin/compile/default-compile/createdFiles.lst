@@ -1,0 +1,9 @@
+com\hakerone\shadowauth\commands\LoginCommand.class
+com\hakerone\shadowauth\managers\CaptchaManager$CaptchaType.class
+com\hakerone\shadowauth\managers\DatabaseManager.class
+com\hakerone\shadowauth\managers\CaptchaManager.class
+com\hakerone\shadowauth\commands\RegisterCommand.class
+com\hakerone\shadowauth\listeners\PlayerListener.class
+com\hakerone\shadowauth\managers\CaptchaManager$CaptchaData.class
+com\hakerone\shadowauth\ShadowAuth.class
+com\hakerone\shadowauth\commands\LogoutCommand.class

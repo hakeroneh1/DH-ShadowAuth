@@ -1,0 +1,115 @@
+# ═══════════════════════════════════════════════════
+# ShadowAuth Configuration
+# Author: haker_one
+# Version: 1.0.0
+# ═══════════════════════════════════════════════════
+
+settings:
+  # ═══════════════════════════════════════════════
+  # Database Settings
+  # ═══════════════════════════════════════════════
+  database:
+    # Leave empty for SQLite
+    host: ""
+    port: "3306"
+    name: ""
+    username: ""
+    password: ""
+    pool:
+      max_size: 10
+      min_idle: 2
+      connection_timeout: 30000
+      idle_timeout: 600000
+      max_lifetime: 1800000
+
+  # ═══════════════════════════════════════════════
+  # Session Settings
+  # ═══════════════════════════════════════════════
+  session:
+    # Session duration in hours
+    max_age_hours: 15
+    # Check IP address for session validation
+    check_ip: false
+
+  # ═══════════════════════════════════════════════
+  # Security Settings
+  # ═══════════════════════════════════════════════
+  security:
+    max_login_attempts: 5
+    attempt_timeout_minutes: 5
+    password:
+      min_length: 4
+      max_length: 32
+
+  # ═══════════════════════════════════════════════
+  # Auth Room Settings
+  # ═══════════════════════════════════════════════
+  auth_room:
+    enabled: false
+    world: "world"
+    x: 0
+    y: 100
+    z: 0
+    yaw: 0
+    pitch: 0
+
+  # ═══════════════════════════════════════════════
+  # Spawn Settings (teleport after auth)
+  # ═══════════════════════════════════════════════
+  spawn:
+    # Teleport to spawn after successful authentication
+    enabled: false
+    world: "world"
+    x: 0
+    y: 100
+    z: 0
+    yaw: 0
+    pitch: 0
+
+  # ═══════════════════════════════════════════════
+  # Teleport Settings
+  # ═══════════════════════════════════════════════
+  teleport:
+    # Teleport to last location after auth (if spawn is disabled)
+    after_auth: true
+    # Delay in ticks before teleport (20 ticks = 1 second)
+    delay: 5
+
+  # ═══════════════════════════════════════════════
+  # Captcha Settings
+  # ═══════════════════════════════════════════════
+  captcha:
+    enabled: false
+    # Types: MATH, TEXT, BOTH (random if BOTH)
+    type: "MATH"
+    # Show captcha only after X failed attempts (0 = always)
+    after_attempts: 0
+    # Captcha timeout in seconds
+    timeout: 60
+    # Max captcha attempts
+    max_attempts: 3
+    # Messages for captcha
+    messages:
+      math: "&e&lРешите: {question}"
+      text: "&e&lВведите код: {code}"
+      success: "&a&lКапча пройдена!"
+      failed: "&c&lНеверно! Попробуйте ещё раз."
+      timeout: "&c&lВремя вышло! Попробуйте снова."
+
+  # ═══════════════════════════════════════════════
+  # Messages Customization
+  # ═══════════════════════════════════════════════
+  messages:
+    prefix: "&8[&6&lShadow&8&lAuth&8] "
+    login_success: "&a&lВы успешно вошли!"
+    login_failed: "&c&lНеверный пароль!"
+    register_success: "&a&lАккаунт зарегистрирован!"
+    register_failed: "&c&lАккаунт уже существует!"
+    already_logged: "&e&lВы уже авторизованы!"
+    need_auth: "&c&lСначала авторизуйтесь!"
+    logout_success: "&e&lВы вышли из системы!"
+    usage: "&e&lИспользование: &a&l/{command} <password>"
+    password_short: "&c&lПароль должен быть от {min} до {max} символов!"
+    admin_reload: "&a&lКонфигурация перезагружена!"
+    kicked_for_logout: "&e&lВы вышли из аккаунта. Пожалуйста, войдите снова."
+    teleporting: "&e&lТелепортация..."

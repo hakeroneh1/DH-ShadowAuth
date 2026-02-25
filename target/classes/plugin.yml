@@ -1,0 +1,29 @@
+name: ShadowAuth
+version: '1.0.0'
+main: com.hakerone.shadowauth.ShadowAuth
+api-version: '1.21'
+website: 'https://github.com/hakerone/CopperTera-Core'
+authors: [haker_one]
+
+commands:
+  register:
+    description: Register a new account
+    usage: /register <password>
+    aliases: [reg]
+  login:
+    description: Login to your account
+    usage: /login <password>
+    aliases: [l]
+  logout:
+    description: Logout from your account
+    usage: /logout
+  shadowauth:
+    description: Admin commands for ShadowAuth
+    usage: /shadowauth <reload>
+    permission: shadowauth.admin
+    aliases: [sa]
+
+permissions:
+  shadowauth.admin:
+    description: Access to admin commands
+    default: op
